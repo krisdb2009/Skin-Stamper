@@ -1,0 +1,191 @@
+*{
+transition:.5s;
+-webkit-transition:.5s;
+font-family: "Ubu", sans-serif;
+text-shadow:1px 1px 5px black;
+}
+@font-face {
+font-family: "Ubu";
+font-style: normal;
+font-weight: 300;
+src: url('ubu.woff') format("woff");
+}
+body {
+background-color:black;
+background-image:url('bg.png');
+background-attachment: fixed;
+}
+#title {
+color:white;
+font-size:80px;
+text-align:center;
+}
+#hide {
+display:none;
+}
+#link,a {
+color:gray;
+text-decoration:none;
+}
+#footer {
+box-shadow:inset 0px 5px 5px rgba(0, 0, 0, 0.3);	
+bottom:0px;
+left:0px;
+height:25px;
+border-top:0px solid rgba(0, 0, 0, 0.2);
+width:100%;
+background-image:url('bg.png');
+position:fixed;
+background-color:black;
+}
+#shade {
+width:100%;
+height:100%;
+position:fixed;
+top:0px;
+left:0px;
+background-color:black;
+    -webkit-animation: fadein2 3s; /* Safari and Chrome */
+       -moz-animation: fadein2 3s; /* Firefox */
+        -ms-animation: fadein2 3s; /* Internet Explorer */
+         -o-animation: fadein2 3s; /* Opera */
+            animation: fadein2 3s;
+}
+@keyframes fadein2 {
+    0% { opacity: 1; }
+	10%{ opacity: 0; }
+	90%{ opacity: 0; }
+}
+/* Firefox */
+@-moz-keyframes fadein2 {
+    0% { opacity: 1; }
+	10%{ opacity: 0; }
+	90%{ opacity: 0; }
+}
+/* Safari and Chrome */
+@-webkit-keyframes fadein2 {
+    0% { opacity: 1; }
+	10%{ opacity: 0; }
+	90%{ opacity: 0; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein2 {
+    0% { opacity: 1; }
+	10%{ opacity: 0; }
+	90%{ opacity: 0; }
+}
+/* Opera */
+@-o-keyframes fadein2 {
+    0% { opacity: 1; }
+	10%{ opacity: 0; }
+	90%{ opacity: 0; }
+}
+#darken {
+background-color: rgba(0, 0, 0, 0.2);
+position: absolute;
+color:gray;
+top: 0;
+padding-top:3px;
+left: 0;
+width: 100%;
+height: 100%;
+}
+#containtheform {
+box-shadow:inset 0px 0px 5px 5px rgba(0, 0, 0, 0.3);	
+height:460px;
+display:inline-block;
+border:1px dashed gray;
+border-radius:20px;
+width:500px;
+background-color:transparent;
+position:relative;
+    -webkit-animation: fadein .5s; /* Safari and Chrome */
+       -moz-animation: fadein .5s; /* Firefox */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera */
+            animation: fadein .5s;
+}
+#input, select {
+text-align:center;
+color:white;
+border:1px gray solid;
+width:200px;
+outline: none;
+box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+border-radius:10px;
+background-image:url('bg.png');
+}
+select:focus {
+border:1px cyan solid;
+color:gray;
+box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+}
+#input:focus {
+border:1px cyan solid;
+box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+}
+#ifra {
+width:98%;
+margin-top:-40px;
+height:400px;
+border:0px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.betbuttonred:active{
+    -webkit-box-shadow: 0px 3px 0px rgb(0, 88, 88), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgb(0, 88, 88), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgb(0, 88, 88), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+.betbuttonred {
+font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgb(0, 88, 88), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgb(0, 88, 88), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0pxrgb(0, 88, 88), 0px 9px 25px rgba(0,0,0,.7);
+    width: 140px;
+    height:75px;
+    text-align: center;
+    border:none;
+    background-color: rgb(0, 165, 165);
+    background-repeat: repeat-x; 
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+	font-size:30px;
+}
